@@ -1,0 +1,19 @@
+git config -l :展示git配置(全)
+git config --global -l:展示git配置(用户)
+git config --global 1 2:设置git配置中的 1 为 2 (例如git config --global user.name "lulixiang",就是设置user.name为"lulixiang",常用设置有user.name和user.email)
+
+git init :把目录作为初始化项目
+git clone [url]:把路径的仓库拷贝到目录
+git status:目录中文件状态[Untracked(未跟踪),Staged(暂存状态),Unmodify(入库未修改),Modified(已修改)]
+git add . :把所有进行版本管理的文件放入暂存区
+git commit -m [message]:把所有暂存区的文件提交本地git仓库,同时发送信息
+git push:班所有本地git仓库提交到远程仓库
+
+忽略文件
+在主目录下建立.gitignore文件,规则如下
+[名称前/] 表示向上忽略,[名称后/] 表示向下忽略,[*] 表示通配符,[!] 表示例外
+例如
+/temp 表示除了temp目录都忽略
+temp/ 表示temp目录下的都忽略
+*.txt 表示忽略所有.txt结尾文件
+!abc.txt 表示abc.txt例外,是不被忽略的
