@@ -8,7 +8,7 @@ git status:目录中文件状态[Untracked(未跟踪),Staged(暂存状态),Unmod
 git add . :把所有进行版本管理的文件放入暂存区
 git commit -m [message]:把所有暂存区的文件提交本地git仓库,同时发送信息
 git push:班所有本地git仓库提交到远程仓库
-
+1
 忽略文件
 在主目录下建立.gitignore文件,规则如下
 [名称前/] 表示向上忽略,[名称后/] 表示向下忽略,[*] 表示通配符,[!] 表示例外
